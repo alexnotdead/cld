@@ -821,12 +821,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 5px 0 0;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1250px) {
   .footer__column {
     width: 50%;
   }
   .footer__column:last-child {
-    padding: 30px 0 0 0;
+    padding: 100px 0 0 0;
     justify-content: center;
   }
   .footer__row {
@@ -846,6 +846,7 @@ h1, h2, h3, h4, h5, h6 {
     order: -2;
   }
   .footer__column:last-child {
+    padding: 30px 0 0 0;
     order: -1;
   }
   .footer__row {
