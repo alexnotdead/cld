@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1050px) {
   .slider-banner__body {
-    padding: 20px 20px;
+    padding: 100px 20px;
   }
   .slider-banner__title {
     font-size: 60px;
@@ -324,6 +324,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .slider-banner {
     margin: 60px 0;
+  }
+  .slider-banner__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50vh;
   }
   .slider-banner__title {
     font-size: 40px;
@@ -695,11 +701,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .spoiler-block__icon {
   transition: all ease 0.5s;
+  width: 50px;
+  height: 50px;
 }
 .spoiler-block__title {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .spoiler-block__title.active .spoiler-block__icon {
   transform: rotate(135deg);
