@@ -693,20 +693,15 @@ h1, h2, h3, h4, h5, h6 {
 .spoiler-block:last-child {
   border-bottom: 1px solid #CACACA;
 }
-.spoiler-block__title {
-  position: relative;
-}
-.spoiler-block__title::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 18px;
-  width: 50px;
-  height: 50px;
-  background: url(../img/icon/+х.svg);
+.spoiler-block__icon {
   transition: all ease 0.5s;
 }
-.spoiler-block__title.active::after {
+.spoiler-block__title {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.spoiler-block__title.active .spoiler-block__icon {
   transform: rotate(135deg);
 }
 .spoiler-block__title h1 {
