@@ -1,9 +1,9 @@
-  
+
 {
+  "encoding": "UTF-8",
   "headers": {
     "/*": {
-      "X-Author": "mr_noobody",
       "Access-Control-Allow-Origin": "*"
     }
-  }
+  }    
 }
