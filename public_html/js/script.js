@@ -24,6 +24,7 @@ $('.spoiler-block__title').click(function(event) {
     $(this).toggleClass('active').next().slideToggle(500);
 })
 
+
 const burger = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__menu');
 
@@ -41,12 +42,12 @@ form.onclick = (event) =>{
     if (!target.classList.contains('form__input')) return;
 
     if (target.classList.contains('name')) target.value = '';
-    else document.querySelector('.name').value = "Фамилия, имя и отчество*";
+    else if(document.querySelector('.name').value == "") document.querySelector('.name').value = "Фамилия, имя и отчество*";
     
     if (target.classList.contains('mail')) target.value = '';
-    else document.querySelector('.mail').value = 'E-mail*';
+    else if(document.querySelector('.mail').value == "") document.querySelector('.mail').value = 'E-mail*';
 
     if (target.classList.contains('mess')) target.value = '';
-    else document.querySelector('.mess').value = 'Сообщение';
+    else if(document.querySelector('.mess').value == "") document.querySelector('.mess').value = 'Сообщение';
 }
 
