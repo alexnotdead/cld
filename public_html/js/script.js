@@ -26,11 +26,11 @@ $('.spoiler-block__title').click(function(event) {
 
 
 const burger = document.querySelector('.header__burger');
-const headerMenu = document.querySelector('.header__menu');
 
 burger.onclick = () =>{
-    headerMenu.classList.toggle('active');
+    document.querySelector('.header__menu').classList.toggle('active');
     burger.classList.toggle('active');
+    document.querySelector('body').classList.toggle('noscroll');
 }
 
 const form = document.querySelector('.form');
